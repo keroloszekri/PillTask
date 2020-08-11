@@ -20,48 +20,17 @@ namespace Pill
         public Form1()
         {
             InitializeComponent();
-            FillItem();
             BindGrid(0, "Store1");
 
         }
 
-        private void FillItem()
-        {
-            //var depts =(from dept in context.items select dept).ToList();
-            //CmpItems.DisplayMember = "ItemName";
-            //CmpItems.ValueMember = "ID";
-            //CmpItems.DataSource = depts;
-
-            //CmpUnit.DisplayMember = "Unit";
-            //CmpItems.ValueMember = "Unit";
-            //CmpItems.DataSource = depts;
-
-        }
-
-
         void BindGrid(int ID, string store)
         {
-            var items = (from dept in context.items where dept.PillID == ID && dept.Pill.Store == store select dept).ToList();
-            //var items = (from cust in context.pillitems where cust.pillid == id select cust.itemid).tolist();
-            //messagebox.show(items.tostring());
+            var items = (from dept in context.items where dept.PillID == ID && dept.Pill.Store == store select dept).ToList(); 
             dataGridView1.DataSource = items;
             dataGridView1.Columns[0].Visible = false;
             dataGridView1.Columns[8].Visible = false;
             dataGridView1.Columns[9].Visible = false;
-
-            ////to create acombobox
-            //DataGridViewComboBoxColumn cmb = new DataGridViewComboBoxColumn();
-            //cmb.HeaderText = "Select Data";
-            //cmb.Name = "cmb";
-            //cmb.MaxDropDownItems = 4;
-            //cmb.Items.Add("True");
-            //cmb.Items.Add("False");
-            //dataGridView1.Columns.Add(cmb);
-
-        }
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -99,7 +68,6 @@ namespace Pill
         private void button4_Click(object sender, EventArgs e)
         {
             AddRow();
-            //FillTextbox();
         }
 
         private void AddRow()

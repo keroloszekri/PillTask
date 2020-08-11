@@ -12,7 +12,5 @@ namespace Pill.Model
         public string Store { get; set; }
         public DateTime Date { get; set; }
 
-
-
     }
 }

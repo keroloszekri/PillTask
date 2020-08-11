@@ -1,5 +1,4 @@
 F:\Full Stack\Task\dynamicslink Task\Pill\Pill\obj\Debug\Pill.Form1.resources
-F:\Full Stack\Task\dynamicslink Task\Pill\Pill\obj\Debug\Pill.Migrations.hyu.resources
 F:\Full Stack\Task\dynamicslink Task\Pill\Pill\obj\Debug\Pill.Properties.Resources.resources
 F:\Full Stack\Task\dynamicslink Task\Pill\Pill\obj\Debug\Pill.csproj.GenerateResource.cache
 F:\Full Stack\Task\dynamicslink Task\Pill\Pill\obj\Debug\Pill.csproj.CoreCompileInputs.cache
